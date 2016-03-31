@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_home">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <RadioButton
+            android:id="@+id/rb_home_home"
+            android:text="指南"
+            android:drawableTop="@drawable/home_select"
+            style="@style/home_RadioButton" />
+        <RadioButton
+            android:id="@+id/rb_hot_home"
+            android:text="热门"
+            android:drawableTop="@drawable/select_select"
+            style="@style/home_RadioButton" />
+        <RadioButton
+            android:text="分类"
+            android:id="@+id/rb_category_home"
+            android:drawableTop="@drawable/category_select"
+            style="@style/home_RadioButton" />
+        <RadioButton
+            android:text="我的"
+            android:id="@+id/rb_profile_home"
+            android:drawableTop="@drawable/profile_select"
+            style="@style/home_RadioButton" />
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_home_other"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <TextView
+        android:id="@+id/tv_home_other_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/like_bg"
+        android:layout_alignTop="@+id/iv_home_other"
+        android:drawableTop="@drawable/ic_action_compact_favourite_normal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="1234"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:drawablePadding="2dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/heart_content_bg"/>
+    <TextView
+        android:id="@+id/tv_home_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/iv_home_other"
+        android:layout_marginBottom="10dp"
+        android:text="XXXXX"
+        android:textSize="18sp"/>
+</RelativeLayout>

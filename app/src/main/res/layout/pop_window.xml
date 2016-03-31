@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gv_pop_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c4c4c4"
+        android:verticalSpacing="1.0px"
+        android:horizontalSpacing="1.0px"
+        android:numColumns="4"/>
+</LinearLayout>

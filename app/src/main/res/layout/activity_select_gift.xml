@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_show_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000">
+        <ImageButton
+            android:id="@+id/btn_select_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back"
+            android:background="#FF0000"/>
+        <TextView
+            android:id="@+id/tv_select_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="挑选礼物"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_sort"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="#FF0000"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="对象"
+            style="@style/select_gift" />
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:background="#c4c4c4"
+            android:layout_gravity="center"/>
+        <TextView
+            android:text="场合"
+            style="@style/select_gift" />
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:background="#c4c4c4"
+            android:layout_gravity="center"/>
+        <TextView
+            android:text="个性"
+            style="@style/select_gift" />
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:background="#c4c4c4"
+            android:layout_gravity="center"/>
+        <TextView
+            android:text="价格"
+            style="@style/select_gift" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_select_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
